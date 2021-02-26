@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsStreetFood"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:id="@+id/street_food_details_image"
+        android:layout_width="339dp"
+        android:layout_height="174dp"
+
+        android:layout_marginTop="28dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add_location_image" />
+
+    <TextView
+        android:id="@+id/street_food_details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#6B3A433B"
+        android:text="Location name"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/street_food_details_image" />
+
+    <TextView
+        android:id="@+id/street_food_details_specific"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#6B3A433B"
+        android:text="Location specific"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/street_food_details_description"
+        app:layout_constraintTop_toBottomOf="@+id/street_food_details_description" />
+
+
+    <TextView
+        android:id="@+id/street_food_details_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#6B3A433B"
+        android:text="Location location"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/street_food_details_description"
+        app:layout_constraintTop_toBottomOf="@+id/street_food_details_description" />
+
+    <TextView
+        android:id="@+id/street_food_details_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#6B3A433B"
+        android:text="Location address"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/street_food_details_specific"
+        app:layout_constraintTop_toBottomOf="@+id/street_food_details_specific" />
+
+    <TextView
+        android:id="@+id/street_food_details_description"
+        android:layout_width="357dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="16dp"
+        android:background="#6B3A433B"
+        android:scrollbars="vertical"
+        android:text="Description"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/street_food_details_rating_bar" />
+
+    <Button
+        android:id="@+id/street_food_details_see_reviews"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Reviews"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/street_food_details_rating_bar"
+        app:layout_constraintEnd_toEndOf="@+id/street_food_details_image"
+        app:layout_constraintStart_toEndOf="@+id/street_food_details_rating_number" />
+
+    <Button
+        android:id="@+id/street_food_details_add_review"
+        android:layout_width="99dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Add review"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/street_food_details_address"
+        app:layout_constraintTop_toBottomOf="@+id/street_food_details_address" />
+
+    <RatingBar
+        android:id="@+id/street_food_details_rating_bar"
+        style="@android:style/Widget.DeviceDefault.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#1E030303"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3"
+        app:layout_constraintStart_toStartOf="@+id/street_food_details_image"
+        app:layout_constraintTop_toBottomOf="@+id/street_food_details_name" />
+
+    <TextView
+        android:id="@+id/street_food_details_rating_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="2dp"
+        android:text="(0)"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/street_food_details_rating_bar"
+        app:layout_constraintStart_toEndOf="@+id/street_food_details_rating_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

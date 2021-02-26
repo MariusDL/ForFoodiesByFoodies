@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/view_profile"
+        android:title="Your profile" />
+    <item
+        android:id="@+id/add_restaurant"
+        android:title="Add new restaurant" />
+    <item
+        android:id="@+id/add_street_food"
+        android:title="Add new street food" />
+    <item
+        android:id="@+id/all_users"
+        android:title="All users" />
+    <item
+        android:id="@+id/sign_out_option"
+        android:title=" Log Out" />
+
+
+</menu>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviewAddNew"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/new_review_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:background="#853C3A3A"
+        android:text="Location"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/new_review_text"
+        android:layout_width="355dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="   Enter review"
+        android:inputType="textMultiLine|textPersonName"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/new_review_location"
+        app:layout_constraintTop_toBottomOf="@+id/bew_review_stars" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="#853C3A3A"
+        android:text="Choose the number of stars:"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/new_review_location"
+        app:layout_constraintTop_toBottomOf="@+id/new_review_location" />
+
+    <RatingBar
+        android:id="@+id/bew_review_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#2AFFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/new_review_add_review"
+        android:layout_width="146dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Add review"
+        app:layout_constraintEnd_toEndOf="@+id/new_review_text"
+        app:layout_constraintTop_toBottomOf="@+id/new_review_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>
