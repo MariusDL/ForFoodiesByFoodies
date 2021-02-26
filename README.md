@@ -2,6 +2,7 @@
 ForFoodiesByFoodies
 
 ## Project Description
+Uni assignemnt<br>
 This android app allows users to add, view details, and add reviews to restaturants and street food locations in their area.
 
 
